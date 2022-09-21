@@ -12,4 +12,152 @@ $text-color:rgb(64,64,64);//color of text;
 
 *{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//navbar
+.navbar{
+    background-color: $navbar;
+    justify-content: flex-start;
+    .dropdown{
+        .navbar-toggler{
+            border: none;
+            padding: 0.25rem 0.25rem 0.25rem 0;
+            margin-right: .75rem;
+        }
+        .dropdown-menu{
+            position: fixed;
+            height: 100vh;
+            width: 80vw;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: $navbar;
+            top: 0;
+            overflow-y: scroll;
+            nav{
+                a{
+                    color: $text-color;
+                    &:hover{
+                        color: $blue-text;
+                        background-color: $hover-aside-left;
+                        text-decoration: underline;
+                    }
+                }
+                img{
+                    margin-right: .25rem;
+                    padding-bottom: .25rem;
+                }
+            }
+            .head{
+                height: 3rem;
+                .emojis{
+                    align-items: center;
+                    margin-left: -1rem;
+                    padding: 1rem 0;
+                    h6{
+                        margin: 0 .25rem 0 0;
+                    }
+                }
+            }
+        }
+        .others{
+            margin: 1rem 0 .5rem 1.3rem;
+            h6{
+                margin: 0;
+            }
+        }
+        .socialm-icons{
+            align-items: center;
+            justify-content: space-evenly;
+            height: 2.5rem;
+            margin-right: 3.5rem;
+        }
+    }
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+    .icons-navbar{
+        align-items: center;
+        margin-left: auto;
+        width: 30%;
+        justify-content: space-between;
+        svg{
+            height: 2.3rem;
+            &:hover{
+                fill: $blue-text;
+                background-color: $hover-aside-left;
+            }
+        }
+        img{
+            width: 2rem;
+            border-radius: 100%;
+            &:hover{
+               border: 1px $hover-aside-left solid;
+            }
+        }
+    }
+}
+//navbar-responsive
+@media only screen and (max-width:767px){
+    .navbar{
+        .form-control{
+            display: none;
+        }
+        .icons-navbar{
+            button{
+                display: none;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width:768px){
+    .navbar{
+        .form-control{
+            width: 55%;
+            background-image: url("../img/search.svg");
+            background-repeat: no-repeat;
+            background-position: center right 10px;
+            &:hover{
+                border: 1px $text-color solid;
+            }
+        }
+        .icons-navbar{
+            justify-content: space-evenly;
+            margin-right: 1rem;
+            width: 30%;
+            .btn{
+                border: 1px $blue-text solid;
+                color: $blue-text;
+                height: 2.5rem;
+                font-size: 1rem;
+                width: 7.4rem;
+                padding: 0;
+                &:hover{
+                    background-color: $blue-text;
+                    color: $navbar;
+                    text-decoration: underline;
+                }
+            }
+            .search-mobile{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1000px){
+    .navbar{
+        .form-control{
+            width: 30%;
+        }
+        .icons-navbar{
+            justify-content: space-evenly;
+            margin-right: 3rem;
+            width: 20%;
+        }
+    }
+
 }

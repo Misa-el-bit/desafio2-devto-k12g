@@ -1,3 +1,137 @@
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  justify-content: flex-start;
+}
+.navbar .dropdown .navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.25rem 0.25rem 0;
+  margin-right: 0.75rem;
+}
+.navbar .dropdown .dropdown-menu {
+  position: fixed;
+  height: 100vh;
+  width: 80vw;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  overflow-y: scroll;
+}
+.navbar .dropdown .dropdown-menu nav a {
+  color: rgb(64, 64, 64);
+}
+.navbar .dropdown .dropdown-menu nav a:hover {
+  color: rgb(59, 73, 223);
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline;
+}
+.navbar .dropdown .dropdown-menu nav img {
+  margin-right: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.navbar .dropdown .dropdown-menu .head {
+  height: 3rem;
+}
+.navbar .dropdown .dropdown-menu .head .emojis {
+  align-items: center;
+  margin-left: -1rem;
+  padding: 1rem 0;
+}
+.navbar .dropdown .dropdown-menu .head .emojis h6 {
+  margin: 0 0.25rem 0 0;
+}
+.navbar .dropdown .others {
+  margin: 1rem 0 0.5rem 1.3rem;
+}
+.navbar .dropdown .others h6 {
+  margin: 0;
+}
+.navbar .dropdown .socialm-icons {
+  align-items: center;
+  justify-content: space-evenly;
+  height: 2.5rem;
+  margin-right: 3.5rem;
+}
+.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.navbar .icons-navbar {
+  align-items: center;
+  margin-left: auto;
+  width: 30%;
+  justify-content: space-between;
+}
+.navbar .icons-navbar svg {
+  height: 2.3rem;
+}
+.navbar .icons-navbar svg:hover {
+  fill: rgb(59, 73, 223);
+  background-color: rgba(59, 73, 223, 0.1);
+}
+.navbar .icons-navbar img {
+  width: 2rem;
+  border-radius: 100%;
+}
+.navbar .icons-navbar img:hover {
+  border: 1px rgba(59, 73, 223, 0.1) solid;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar .form-control {
+    display: none;
+  }
+  .navbar .icons-navbar button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar .form-control {
+    width: 55%;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+  }
+  .navbar .form-control:hover {
+    border: 1px rgb(64, 64, 64) solid;
+  }
+  .navbar .icons-navbar {
+    justify-content: space-evenly;
+    margin-right: 1rem;
+    width: 30%;
+  }
+  .navbar .icons-navbar .btn {
+    border: 1px rgb(59, 73, 223) solid;
+    color: rgb(59, 73, 223);
+    height: 2.5rem;
+    font-size: 1rem;
+    width: 7.4rem;
+    padding: 0;
+  }
+  .navbar .icons-navbar .btn:hover {
+    background-color: rgb(59, 73, 223);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  .navbar .icons-navbar .search-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .navbar .form-control {
+    width: 30%;
+  }
+  .navbar .icons-navbar {
+    justify-content: space-evenly;
+    margin-right: 3rem;
+    width: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */
