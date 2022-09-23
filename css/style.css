@@ -8,6 +8,10 @@
 .navbar {
   background-color: rgb(255, 255, 255);
   justify-content: flex-start;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
 }
 .navbar .dropdown .navbar-toggler {
   border: none;
@@ -69,9 +73,11 @@
   margin-left: auto;
   width: 30%;
   justify-content: space-between;
+  background-color: rgb(255, 255, 255);
 }
 .navbar .icons-navbar svg {
   height: 2.3rem;
+  background-color: rgb(255, 255, 255);
 }
 .navbar .icons-navbar svg:hover {
   fill: rgb(59, 73, 223);
@@ -83,6 +89,97 @@
 }
 .navbar .icons-navbar img:hover {
   border: 1px rgba(59, 73, 223, 0.1) solid;
+}
+
+.navbar-light {
+  border-bottom: 1px rgba(100, 112, 125, 0.2784313725) solid;
+}
+
+main {
+  margin-top: 56px;
+  background-color: rgb(245, 245, 245);
+}
+main .aside-left {
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+main .aside-left nav .nav-link {
+  color: rgb(64, 64, 64);
+  border-radius: 6px;
+}
+main .aside-left nav .nav-link:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  color: rgb(59, 73, 223);
+  text-decoration: underline;
+}
+main .aside-left nav .nav-link img {
+  margin-right: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+main .aside-left nav .last-link {
+  margin-bottom: 1rem;
+}
+main .aside-left nav .others {
+  margin: 1.5rem 0 0.5rem 1.3rem;
+}
+main .aside-left nav .others h6 {
+  margin: 0;
+}
+main .aside-left nav .socialm-icons {
+  align-items: center;
+  justify-content: space-evenly;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+main .aside-left nav .socialm-icons svg {
+  fill: rgb(61, 61, 61);
+}
+main .aside-left nav .socialm-icons svg:hover {
+  fill: rgb(59, 73, 223);
+  background-color: rgba(59, 73, 223, 0.1);
+}
+main .aside-left .nav-tags .tags-head {
+  justify-content: space-between;
+  margin-left: 0.9rem;
+  margin-right: 1.9rem;
+  margin-bottom: 1rem;
+}
+main .aside-left .nav-tags .tags-head svg :hover {
+  fill: rgb(59, 73, 223);
+  background-color: rgba(59, 73, 223, 0.1);
+}
+main .aside-left .nav-tags .tags {
+  height: 160px;
+  margin-bottom: 2rem;
+}
+main .aside-left .nav-tags .tags .nav-link {
+  width: 260px;
+}
+main .aside-left .card {
+  width: 16rem;
+  color: rgb(64, 64, 64);
+  margin-bottom: 1rem;
+}
+main .aside-left .card .card-img-top {
+  border-radius: 7px;
+  margin-top: 1.25rem;
+  margin-left: 0.75rem;
+  width: 90%;
+}
+main .aside-left .card .card-body {
+  padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+}
+main .aside-left .card .card-body .card-title, main .aside-left .card .card-body .card-text {
+  margin-bottom: 0.25rem;
+}
+main .aside-left .card .card-body .shop {
+  line-height: 2.25rem;
+}
+main .aside-left .card .card-body a {
+  color: rgb(59, 73, 223);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -105,7 +202,7 @@
   }
   .navbar .icons-navbar {
     justify-content: space-evenly;
-    margin-right: 1rem;
+    margin-right: 0;
     width: 30%;
   }
   .navbar .icons-navbar .btn {
@@ -131,7 +228,65 @@
   }
   .navbar .icons-navbar {
     justify-content: space-evenly;
-    margin-right: 3rem;
+    margin-right: 2rem;
     width: 20%;
+  }
+}
+@media only screen and (min-width: 767px) {
+  main .aside-left {
+    padding-left: 0.5rem;
+  }
+  main .aside-left nav .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+  main .aside-left nav .others {
+    margin: 1.5rem 0 0.5rem 0.75rem;
+  }
+  main .aside-left nav .socialm-icons {
+    width: 11rem;
+    margin-right: 0;
+  }
+  main .aside-left .nav-tags .tags-head {
+    width: 11rem;
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  main .aside-left .card {
+    width: 12rem;
+  }
+  main .aside-left .card .card-img-top {
+    margin-left: 0.6rem;
+  }
+  main .aside-left .card .card-body {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main .aside-left {
+    padding-left: 3rem;
+  }
+  main .aside-left nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  main .aside-left nav .others {
+    margin: 1.5rem 0 0.5rem 1.3rem;
+  }
+  main .aside-left nav .socialm-icons {
+    width: 16rem;
+    margin-right: 0;
+  }
+  main .aside-left .nav-tags .tags-head {
+    width: 15rem;
+    margin-right: 1.5rem;
+    margin-left: 0.9rem;
+  }
+  main .aside-left .card {
+    width: 16rem;
+  }
+  main .aside-left .card .card-img-top {
+    margin-left: 0.75rem;
+  }
+  main .aside-left .card .card-body {
+    padding: 1.25rem 1.25rem 0.75rem 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */

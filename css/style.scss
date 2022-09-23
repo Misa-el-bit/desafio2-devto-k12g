@@ -20,6 +20,10 @@ $text-color:rgb(64,64,64);//color of text;
 .navbar{
     background-color: $navbar;
     justify-content: flex-start;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
     .dropdown{
         .navbar-toggler{
             border: none;
@@ -84,8 +88,10 @@ $text-color:rgb(64,64,64);//color of text;
         margin-left: auto;
         width: 30%;
         justify-content: space-between;
+        background-color: $navbar;
         svg{
             height: 2.3rem;
+            background-color: $navbar;
             &:hover{
                 fill: $blue-text;
                 background-color: $hover-aside-left;
@@ -96,6 +102,102 @@ $text-color:rgb(64,64,64);//color of text;
             border-radius: 100%;
             &:hover{
                border: 1px $hover-aside-left solid;
+            }
+        }
+    }
+}
+.navbar-light{
+    border-bottom: 1px #64707d47 solid;
+}
+//main
+main{
+    margin-top: 56px;
+    background-color: $main;
+    .aside-left{
+        padding-top: 1rem;
+        padding-left: 3rem;
+        nav{
+            .nav-link{
+                color: $text-color;
+                border-radius: 6px;
+                &:hover{
+                    background-color: $hover-aside-left;
+                    color: $blue-text;
+                    text-decoration: underline;
+                }
+                img{
+                    margin-right: .25rem;
+                    padding-bottom: .25rem;
+                }
+            }
+            .last-link{
+                margin-bottom: 1rem;
+            }
+            .others{
+                margin: 1.5rem 0 0.5rem 1.3rem;
+                h6{
+                    margin: 0;
+                }
+            }
+            .socialm-icons{
+                align-items: center;
+                justify-content: space-evenly;
+                height: 2.5rem;
+                margin-right: 1rem;
+                margin-bottom: 2rem;
+                svg{
+                    fill: $svg;
+                    &:hover{
+                        fill: $blue-text;
+                        background-color: $hover-aside-left;
+                    }
+                }
+            }
+        }
+        .nav-tags{
+            .tags-head{
+                justify-content: space-between;
+                margin-left: 0.9rem;
+                margin-right: 1.9rem;
+                margin-bottom: 1rem;
+                svg{
+                    :hover{
+                        fill: $blue-text;
+                        background-color: $hover-aside-left;
+                    }
+                }
+            }
+            .tags{
+                height: 160px;
+                margin-bottom: 2rem;
+                .nav-link{
+                    width: 260px;
+                }
+            }
+        }
+        .card{
+            width: 16rem;
+            color: $text-color;
+            margin-bottom: 1rem;
+            .card-img-top{
+                border-radius: 7px;
+                margin-top: 1.25rem;
+                margin-left: 0.75rem;
+                width: 90%;
+            }
+            .card-body{
+                padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+                .card-title, .card-text{
+                    margin-bottom: .25rem;
+                }
+                .shop{
+                    line-height: 2.25rem;
+                }
+                a{
+                    color: $blue-text;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -112,7 +214,6 @@ $text-color:rgb(64,64,64);//color of text;
             }
         }
     }
-
 }
 @media only screen and (min-width:768px){
     .navbar{
@@ -127,7 +228,7 @@ $text-color:rgb(64,64,64);//color of text;
         }
         .icons-navbar{
             justify-content: space-evenly;
-            margin-right: 1rem;
+            margin-right: 0;
             width: 30%;
             .btn{
                 border: 1px $blue-text solid;
@@ -155,9 +256,84 @@ $text-color:rgb(64,64,64);//color of text;
         }
         .icons-navbar{
             justify-content: space-evenly;
-            margin-right: 3rem;
+            margin-right: 2rem;
             width: 20%;
         }
     }
 
+<<<<<<< HEAD
 } 
+=======
+}
+//aside-left responsive
+@media only screen and (min-width:767px){
+    main{
+        .aside-left{
+            padding-left: .5rem;
+            nav{
+                .nav-link{
+                    padding: .5rem .5rem;
+                }
+                .others{
+                    margin: 1.5rem 0 0.5rem 0.75rem;
+                }
+                .socialm-icons{
+                    width: 11rem;
+                    margin-right: 0;
+                }
+            }
+            .nav-tags{
+                .tags-head{
+                    width: 11rem;
+                    margin-left: .5rem;
+                    margin-right: 0;
+                }
+            }
+            .card{
+                width: 12rem;
+                .card-img-top{
+                    margin-left: .6rem;
+                }
+                .card-body{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1000px){
+    main{
+        .aside-left{
+            padding-left: 3rem;
+            nav{
+                .nav-link{
+                    padding: .5rem 1rem;
+                }
+                .others{
+                    margin: 1.5rem 0 0.5rem 1.3rem;
+                }
+                .socialm-icons{
+                    width: 16rem;
+                    margin-right: 0;
+                }
+            }
+            .nav-tags{
+                .tags-head{
+                    width: 15rem;
+                    margin-right: 1.5rem;
+                    margin-left: .9rem;
+                }
+            }
+            .card{
+                width: 16rem;
+                .card-img-top{
+                    margin-left: .75rem;
+                }
+                .card-body{
+                    padding: 1.25rem 1.25rem .75rem 1.25rem;
+                }
+            }
+        }
+    }
+}
+>>>>>>> aside-left
