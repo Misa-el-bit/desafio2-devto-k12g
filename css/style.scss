@@ -236,18 +236,6 @@ main{
     }
 }
 //navbar-responsive
-@media only screen and (max-width:767px){
-    .navbar{
-        .form-control{
-            display: none;
-        }
-        .icons-navbar{
-            button{
-                display: none;
-            }
-        }
-    }
-}
 @media only screen and (min-width:768px){
     .navbar{
         .form-control{
@@ -323,7 +311,7 @@ main{
             width: 20%;
             .user-profile{
                 .user-actions{
-                    margin-right: 5.5rem;
+                    margin-right: 4.5rem;
                 }
             }
         }

@@ -213,14 +213,6 @@ main .aside-left .card .card-body a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
-  .navbar .form-control {
-    display: none;
-  }
-  .navbar .icons-navbar button {
-    display: none;
-  }
-}
 @media only screen and (min-width: 768px) {
   .navbar .form-control {
     width: 55%;
@@ -291,7 +283,7 @@ main .aside-left .card .card-body a {
     width: 20%;
   }
   .navbar .icons-navbar .user-profile .user-actions {
-    margin-right: 5.5rem;
+    margin-right: 4.5rem;
   }
 }
 @media only screen and (min-width: 767px) {
