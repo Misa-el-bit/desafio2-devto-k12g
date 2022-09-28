@@ -8,6 +8,10 @@
 .navbar {
   background-color: rgb(255, 255, 255);
   justify-content: flex-start;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
 }
 .navbar .dropdown .navbar-toggler {
   border: none;
@@ -77,22 +81,49 @@
   fill: rgb(59, 73, 223);
   background-color: rgba(59, 73, 223, 0.1);
 }
-.navbar .icons-navbar img {
+.navbar .icons-navbar .user-profile .profile {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.navbar .icons-navbar .user-profile .profile::after {
+  display: none;
+}
+.navbar .icons-navbar .user-profile .profile img {
   width: 2rem;
   border-radius: 100%;
 }
-.navbar .icons-navbar img:hover {
-  border: 1px rgba(59, 73, 223, 0.1) solid;
+.navbar .icons-navbar .user-profile .user-actions {
+  width: 96%;
+  margin: 0.125rem 0.5rem 0 0.5rem;
+  padding: 0.5rem;
+}
+.navbar .icons-navbar .user-profile .user-actions .dropdown-item {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: rgb(64, 64, 64);
+}
+.navbar .icons-navbar .user-profile .user-actions .dropdown-item:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline;
+  color: rgb(59, 73, 223);
+}
+.navbar .icons-navbar .user-profile .user-actions .first {
+  height: 3.5rem;
+}
+.navbar .icons-navbar .user-profile .user-actions hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 97%;
 }
 
-@media only screen and (max-width: 767px) {
-  .navbar .form-control {
-    display: none;
-  }
-  .navbar .icons-navbar button {
-    display: none;
-  }
+.navbar-light {
+  border-bottom: 1px rgba(100, 112, 125, 0.2784313725) solid;
 }
+
 @media only screen and (min-width: 768px) {
   .navbar .form-control {
     width: 55%;
@@ -105,8 +136,36 @@
   }
   .navbar .icons-navbar {
     justify-content: space-evenly;
-    margin-right: 1rem;
+    margin-right: -0.5rem;
     width: 30%;
+  }
+  .navbar .icons-navbar .user-profile .profile {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  .navbar .icons-navbar .user-profile .profile::after {
+    display: none;
+  }
+  .navbar .icons-navbar .user-profile .profile img {
+    width: 2rem;
+    border-radius: 100%;
+  }
+  .navbar .icons-navbar .user-profile .user-actions {
+    width: 15rem;
+    margin: 0 1rem 0 0;
+    padding: 0.5rem;
+    z-index: 9999;
+    top: 90%;
+  }
+  .navbar .icons-navbar .user-profile .user-actions .dropdown-item {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .navbar .icons-navbar .user-profile .user-actions .first {
+    height: 3.5rem;
   }
   .navbar .icons-navbar .btn {
     border: 1px rgb(59, 73, 223) solid;
@@ -133,5 +192,8 @@
     justify-content: space-evenly;
     margin-right: 3rem;
     width: 20%;
+  }
+  .navbar .icons-navbar .user-profile .user-actions {
+    margin-right: 5.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
