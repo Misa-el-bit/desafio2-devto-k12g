@@ -97,11 +97,44 @@ $text-color:rgb(64,64,64);//color of text;
                 background-color: $hover-aside-left;
             }
         }
-        img{
-            width: 2rem;
-            border-radius: 100%;
-            &:hover{
-               border: 1px $hover-aside-left solid;
+        .user-profile{
+            .profile{
+                padding: 0;
+                background: none;
+                border: none;
+                &::after{
+                    display: none;
+                }
+                img{
+                    width: 2rem;
+                    border-radius: 100%;
+                }
+            }
+            .user-actions{
+                width: 96%;
+                margin: 0.125rem 0.5rem 0 0.5rem;
+                padding: .5rem;
+                .dropdown-item{
+                    height: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    padding: .5rem 1rem;
+                    color: $text-color;
+                    &:hover{
+                        background-color: $hover-aside-left;
+                        text-decoration: underline;
+                        color: $blue-text;
+                    }
+                }
+                .first{
+                    height: 3.5rem;
+                }
+                hr{
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                    width: 97%;
+                }
             }
         }
     }
@@ -228,8 +261,38 @@ main{
         }
         .icons-navbar{
             justify-content: space-evenly;
-            margin-right: 0;
+            margin-right: -.5rem;
             width: 30%;
+            .user-profile{
+                .profile{
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    &::after{
+                        display: none;
+                    }
+                    img{
+                        width: 2rem;
+                        border-radius: 100%;
+                    }
+                }
+                .user-actions{
+                    width: 15rem;
+                    margin: 0 1rem 0 0;
+                    padding: .5rem;
+                    z-index: 9999;
+                    top: 90%;
+                    .dropdown-item{
+                        height: 2.5rem;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 5px;
+                    }
+                    .first{
+                        height: 3.5rem;
+                    }
+                }
+            }
             .btn{
                 border: 1px $blue-text solid;
                 color: $blue-text;
@@ -258,6 +321,11 @@ main{
             justify-content: space-evenly;
             margin-right: 2rem;
             width: 20%;
+            .user-profile{
+                .user-actions{
+                    margin-right: 5.5rem;
+                }
+            }
         }
     }
 } 

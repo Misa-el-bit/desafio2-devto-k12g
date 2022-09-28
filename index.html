@@ -125,9 +125,9 @@
         <a class="navbar-brand ml-lg-5" href="#">
             <img src="img/devto-logo.svg" width="50" height="40" alt="">
         </a>
-        <input class="form-control ml-md-3 ml-lg-3" type="text" placeholder="Search...">
+        <input class="form-control d-none d-md-inline ml-md-3 ml-lg-3" type="text" placeholder="Search...">
         <div class="icons-navbar d-flex">
-            <button type="button" class="btn btn-lg">Create Post</button>
+            <button type="button" class="btn btn-lg d-none d-md-inline">Create Post</button>
             <span class="search-mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img">
                     <title >Search</title>
@@ -138,7 +138,26 @@
                 <title>Notifications</title>
                 <path fill="" d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"></path>
             </svg>
-            <img src="img/trent.jpg" alt="" class="avatar">
+            <div class="user-profile">
+                <button type="button" class="profile dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                    <span>
+                        <img src="img/trent.jpg" alt="">
+                    </span>
+                </button>
+                <div class="user-actions dropdown-menu dropdown-menu-center dropdown-menu-md-right dropdown-menu-lg-right">
+                    <a class="dropdown-item first flex-column align-items-start" href="#">
+                        <p class="m-0">Misa-el-bit</p> 
+                        <small>@misaelbit</small>
+                    </a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Create Post</a>
+                    <a class="dropdown-item" href="#">Reading list</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Sign Out</a>           
+                </div>
+            </div>
         </div>
     </nav>
     <!--Main-->
