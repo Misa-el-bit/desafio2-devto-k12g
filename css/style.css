@@ -76,8 +76,9 @@
   background-color: rgb(255, 255, 255);
 }
 .navbar .icons-navbar svg {
-  height: 2.3rem;
+  height: 2rem;
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 .navbar .icons-navbar svg:hover {
   fill: rgb(59, 73, 223);
@@ -176,7 +177,19 @@ main .aside-left .nav-tags .tags-head {
   margin-right: 1.9rem;
   margin-bottom: 1rem;
 }
-main .aside-left .nav-tags .tags-head svg :hover {
+main .aside-left .nav-tags .tags-head h6 {
+  margin: 0;
+}
+main .aside-left .nav-tags .tags-head a {
+  margin-top: -0.25rem;
+}
+main .aside-left .nav-tags .tags-head a svg {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+main .aside-left .nav-tags .tags-head a svg:hover {
   fill: rgb(59, 73, 223);
   background-color: rgba(59, 73, 223, 0.1);
 }
@@ -211,6 +224,103 @@ main .aside-left .card .card-body a {
   color: rgb(59, 73, 223);
   font-weight: bold;
   text-decoration: none;
+}
+
+main .main-cards-section {
+  padding: 0;
+}
+main .main-cards-section .nav-pills {
+  color: rgb(64, 64, 64);
+}
+main .main-cards-section .nav-pills li #pills-home-tab {
+  font-weight: bold;
+}
+main .main-cards-section .nav-pills li button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 73, 223);
+}
+main .main-cards-section .nav-pills li .nav-link.active {
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(64, 64, 64);
+}
+main .main-cards-section .tab-content .tab-pane .principal-card, main .main-cards-section .tab-content .tab-pane .secondary-card {
+  border-radius: 0.35rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-img-top, main .main-cards-section .tab-content .tab-pane .secondary-card .card-img-top {
+  border-top-left-radius: 0.35rem;
+  border-top-right-radius: 0.35rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .user img, main .main-cards-section .tab-content .tab-pane .secondary-card .user img {
+  width: 2rem;
+  border-radius: 100%;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .user .user-data a, main .main-cards-section .tab-content .tab-pane .secondary-card .user .user-data a {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .user .user-data a .name, main .main-cards-section .tab-content .tab-pane .secondary-card .user .user-data a .name {
+  line-height: 18px;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .user .user-data a .name:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .user .user-data a .name:hover {
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .user .user-data a .date, main .main-cards-section .tab-content .tab-pane .secondary-card .user .user-data a .date {
+  font-size: 0.75rem;
+  color: rgb(61, 61, 61);
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body {
+  padding: 1rem 1rem 0.7rem 1rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title:hover {
+  color: rgb(59, 73, 223);
+  cursor: pointer;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .hastags, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .hastags {
+  margin: 0.5rem 0 0.75rem -0.3rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .hastags a, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .hastags a {
+  color: rgb(64, 64, 64);
+  opacity: 0.8;
+  text-decoration: none;
+  padding: 0.25rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .hastags a:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .hastags a:hover {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .reactions-comments, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .reactions-comments {
+  margin-left: -0.7rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .reactions-comments a, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .reactions-comments a {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .reactions-comments a:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .reactions-comments a:hover {
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .reactions-comments a svg, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .reactions-comments a svg {
+  margin-bottom: 0.25rem;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .save a svg, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .save a svg {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3rem 0 0 0.3rem;
+  border-radius: 5px;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .save a svg:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .save a svg:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .interactions .save a svg:hover path, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .interactions .save a svg:hover path {
+  fill: rgb(59, 73, 223);
 }
 
 @media only screen and (min-width: 768px) {
@@ -342,5 +452,20 @@ main .aside-left .card .card-body a {
   }
   main .aside-left .card .card-body {
     padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-cards-section {
+    padding: 0 1rem;
+  }
+  main .main-cards-section .tab-content .tab-pane .principal-card .card-body, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body {
+    padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+  }
+  main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title {
+    font-size: 1.5rem;
+    margin: 0 0 0 2rem;
+  }
+  main .main-cards-section .tab-content .tab-pane .principal-card .card-body .hastags, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .hastags {
+    margin: 0.75rem 0 1rem 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
