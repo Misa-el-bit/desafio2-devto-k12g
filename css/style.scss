@@ -426,6 +426,13 @@ main{
         }
     }
 }
+// footer
+footer{
+    background-color: $footer;
+    height: 14rem;
+    font-size: .875rem;
+    color: $text-color;
+}
 //navbar-responsive
 @media only screen and (min-width:768px){
     .navbar{
@@ -621,5 +628,11 @@ main{
             padding: 0 .5rem 0 0;
             max-width: 47%;
         }
+    }
+}
+//footer-responsive
+@media only screen and (min-width:768px){
+    footer{
+        height: 13rem;
     }
 }

@@ -385,6 +385,13 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
   font-size: 0.875rem;
 }
 
+footer {
+  background-color: rgb(229, 229, 229);
+  height: 14rem;
+  font-size: 0.875rem;
+  color: rgb(64, 64, 64);
+}
+
 @media only screen and (min-width: 768px) {
   .navbar .form-control {
     width: 55%;
@@ -546,5 +553,10 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
   main .main-cards-section {
     padding: 0 0.5rem 0 0;
     max-width: 47%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    height: 13rem;
   }
 }/*# sourceMappingURL=style.css.map */
