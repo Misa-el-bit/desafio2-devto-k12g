@@ -323,6 +323,68 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
   fill: rgb(59, 73, 223);
 }
 
+.aside-right {
+  padding: 0 0 0 0.5rem;
+}
+.aside-right .list-group {
+  border-radius: 5px;
+}
+.aside-right .list-group .head-listings {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none;
+  height: 3rem;
+  background-color: rgb(250, 250, 250);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.aside-right .list-group .head-listings a {
+  color: rgb(59, 73, 223);
+  text-decoration: none;
+}
+.aside-right .list-group .head-listings .hash-head {
+  color: rgb(64, 64, 64);
+}
+.aside-right .list-group .head-listings .hash-head:hover {
+  color: rgb(59, 73, 223);
+}
+.aside-right .list-group .nav-listing {
+  padding: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 1px solid rgba(0, 0, 0, 0.125);
+}
+.aside-right .list-group .nav-listing:hover {
+  background-color: rgb(255, 255, 255);
+}
+.aside-right .list-group .nav-listing:hover span {
+  color: rgb(59, 73, 223);
+}
+.aside-right .list-group .nav-listing .badge {
+  background-color: rgb(251, 211, 76);
+  color: rgb(131, 66, 20);
+  font-weight: 400;
+  width: 2.25rem;
+  height: 1.27rem;
+  padding: 0.3rem 0;
+  margin-top: 0.25rem;
+}
+.aside-right .list-group .footer-listing {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.aside-right .list-group .footer-listing a {
+  border-top: none;
+  background-color: rgb(250, 250, 250);
+}
+.aside-right .list-group .footer-listing a:hover {
+  background-color: rgb(250, 250, 250);
+}
+.aside-right .list-group .footer-listing a:hover span {
+  color: rgb(59, 73, 223);
+}
+.aside-right .list-group .footer-listing .final-link {
+  font-size: 0.875rem;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar .form-control {
     width: 55%;
@@ -415,6 +477,9 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
     margin-left: 0.5rem;
     margin-right: 0;
   }
+  main .aside-left .nav-tags .tags .nav-link {
+    width: 12rem;
+  }
   main .aside-left .card {
     width: 12rem;
   }
@@ -427,6 +492,7 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
 }
 @media only screen and (min-width: 1000px) {
   main .aside-left {
+    max-width: 23%;
     padding-left: 3rem;
   }
   main .aside-left nav .nav-link {
@@ -439,10 +505,17 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
     width: 16rem;
     margin-right: 0;
   }
+  main .aside-left .nav-tags {
+    width: 15rem;
+  }
   main .aside-left .nav-tags .tags-head {
     width: 15rem;
-    margin-right: 1.5rem;
-    margin-left: 0.9rem;
+  }
+  main .aside-left .nav-tags .tags {
+    width: 16rem;
+  }
+  main .aside-left .nav-tags .tags .nav-link {
+    width: 15rem;
   }
   main .aside-left .card {
     width: 16rem;
@@ -467,5 +540,11 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .inte
   }
   main .main-cards-section .tab-content .tab-pane .principal-card .card-body .hastags, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .hastags {
     margin: 0.75rem 0 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .main-cards-section {
+    padding: 0 0.5rem 0 0;
+    max-width: 47%;
   }
 }/*# sourceMappingURL=style.css.map */

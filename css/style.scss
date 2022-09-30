@@ -364,6 +364,68 @@ main{
         }
     }
 }
+// aside-right
+.aside-right{
+    padding: 0 0 0 .5rem;
+    .list-group{
+        border-radius: 5px;
+        .head-listings{
+            border: 1px solid rgba(0,0,0,.125);
+            border-bottom: none;
+            height: 3rem;
+            background-color: $aside-right;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            a{
+                color: $blue-text;
+                text-decoration: none; 
+            }
+            .hash-head{
+                color: $text-color;
+                &:hover{
+                    color: $blue-text;
+                }
+            }
+        }
+        .nav-listing{
+            padding: 1rem;
+            background-color: $aside-right;
+            box-shadow: 1px solid rgba(0,0,0,.125);
+            &:hover{
+                background-color: $navbar;
+                span{
+                    color: $blue-text;
+                }
+            }
+            .badge{
+                background-color: $badges-bg;
+                color: $badges-text;
+                font-weight: 400;
+                width: 2.25rem;
+                height: 1.27rem;
+                padding: 0.3rem 0;
+                margin-top: .25rem;
+            }              
+        }
+        .footer-listing{
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            a{
+                border-top: none;
+                background-color: $aside-right;
+                &:hover{
+                    background-color: $aside-right;
+                    span{
+                        color: $blue-text;
+                    }
+                }   
+            }
+            .final-link{
+                font-size: .875rem;
+            }
+        }
+    }
+}
 //navbar-responsive
 @media only screen and (min-width:768px){
     .navbar{
@@ -470,6 +532,11 @@ main{
                     margin-left: .5rem;
                     margin-right: 0;
                 }
+                .tags{
+                    .nav-link{
+                        width: 12rem;
+                    }
+                }
             }
             .card{
                 width: 12rem;
@@ -486,6 +553,7 @@ main{
 @media only screen and (min-width:1000px){
     main{
         .aside-left{
+            max-width: 23%;
             padding-left: 3rem;
             nav{
                 .nav-link{
@@ -500,10 +568,15 @@ main{
                 }
             }
             .nav-tags{
+                width: 15rem;
                 .tags-head{
                     width: 15rem;
-                    margin-right: 1.5rem;
-                    margin-left: .9rem;
+                }
+                .tags{
+                    width: 16rem;
+                    .nav-link{
+                        width: 15rem;
+                    }
                 }
             }
             .card{
@@ -539,6 +612,14 @@ main{
                     }
                 }
             }
+        }
+    }
+}
+@media only screen and (min-width:992px){
+    main{
+        .main-cards-section{
+            padding: 0 .5rem 0 0;
+            max-width: 47%;
         }
     }
 }
