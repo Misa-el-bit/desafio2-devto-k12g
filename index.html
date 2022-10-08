@@ -7,21 +7,1497 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Devto clon</title>
 </head>
 <body>
     <!--Header-->
-
+    <nav class="navbar navbar-light">
+        <div class="dropdown d-sm-block d-md-none d-lg-none">
+            <button class="navbar-toggler" type="button" data-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown-menu">
+              <nav class="nav flex-column">
+                <div class="head d-flex justify-content-around align-items-center">
+                    <div class=" emojis d-flex">
+                        <h6>DEV Community</h6>
+                        &#x1F469&#x200D&#x1F4BB;
+                        &#x1F468&#x200D&#x1F4BB;
+                    </div>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <a class="nav-link active" href="#">
+                    <img src="img/home.svg" alt="">
+                    Home
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/readinglist.svg" alt="">
+                    Reading List 
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/listings.svg" alt="">
+                    Listings
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/podcasts.svg" alt="">
+                    Podcast
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/videos.svg" alt="">
+                    Videos
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/tags.svg" alt="">
+                    Tags
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/faq.svg" alt="">
+                    FAQ
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/dev-shop.svg" alt="">
+                    Forem Shop
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/sponsors.svg" alt="">
+                    Sponsors    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/about.svg" alt="">
+                    About    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/contact.svg" alt="">
+                    Contact    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/guides.svg" alt="">
+                    Guides    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/software-compar.svg" alt="">
+                    Software comparisons    
+                </a>
+                <span class="others">
+                    <h6>Other</h6>
+                </span>
+                <a class="nav-link" href="#">
+                    <img src="img/code-of-conduct.svg" alt="">
+                    Code of Conduct    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/privacy-policy.svg" alt="">
+                    Privacy Policy    
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="img/terms-of-use.svg" alt="">
+                    Terms of use    
+                </a>
+                <div class="socialm-icons d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <title id="a4csmpur5bau3h8pgr0i56lh1mo9uiub">Twitter</title>
+                        <path d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <title>Facebook</title>
+                        <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ai6lld7kjm6poyq60j95yecmly52o9ed" class="crayons-icon">
+                        <title id="ai6lld7kjm6poyq60j95yecmly52o9ed">Github</title>
+                        <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <title id="a9mxmwigmxprdyj9potffal635l5wjv">Instagram</title>
+                        <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <title>Twitch</title>
+                        <path d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"></path>
+                    </svg>
+                </div>
+              </nav>
+            </div>
+          </div>
+        <a class="navbar-brand ml-lg-5" href="#">
+            <img src="img/devto-logo.svg" width="50" height="40" alt="">
+        </a>
+        <input class="form-control d-none d-md-inline ml-md-3 ml-lg-3" type="text" placeholder="Search...">
+        <div class="icons-navbar d-flex">
+            <button type="button" class="btn btn-lg d-none d-md-inline">Create Post</button>
+            <span class="search-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img">
+                    <title >Search</title>
+                    <path fill="" d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
+                </svg>
+            </span>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" >
+                    <title>Notifications</title>
+                    <path fill="" d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"></path>
+                </svg>
+            </a>
+            <div class="user-profile">
+                <button type="button" class="profile dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                    <span>
+                        <img src="img/trent.jpg" alt="">
+                    </span>
+                </button>
+                <div class="user-actions dropdown-menu dropdown-menu-center dropdown-menu-md-right dropdown-menu-lg-right">
+                    <a class="dropdown-item first flex-column align-items-start" href="#">
+                        <p class="m-0">Misa-el-bit</p> 
+                        <small>@misaelbit</small>
+                    </a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Create Post</a>
+                    <a class="dropdown-item" href="#">Reading list</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Sign Out</a>           
+                </div>
+            </div>
+        </div>
+    </nav>
     <!--Main-->
-
-    <!--Aside-left-->
-
-    <!--Aside-right-->
-
+    <main class="container-fluid d-flex">
+        <div class="row">
+            <!--Aside-left-->
+            <aside class="col-lg-3 col-md-3 aside-left d-none d-md-inline">
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="#">
+                        <img src="img/home.svg" alt="">
+                        Home
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/readinglist.svg" alt="">
+                        Reading List 
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/listings.svg" alt="">
+                        Listings
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/podcasts.svg" alt="">
+                        Podcast
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/videos.svg" alt="">
+                        Videos
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/tags.svg" alt="">
+                        Tags
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/faq.svg" alt="">
+                        FAQ
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/dev-shop.svg" alt="">
+                        Forem Shop
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/sponsors.svg" alt="">
+                        Sponsors    
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/about.svg" alt="">
+                        About    
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/contact.svg" alt="">
+                        Contact    
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/guides.svg" alt="">
+                        Guides    
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/software-compar.svg" alt="">
+                        Software comparisons    
+                    </a>
+                    <span class="others">
+                        <h6>Other</h6>
+                    </span>
+                    <a class="nav-link" href="#">
+                        <img src="img/code-of-conduct.svg" alt="">
+                        Code of Conduct    
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="img/privacy-policy.svg" alt="">
+                        Privacy Policy    
+                    </a>
+                    <a class="nav-link last-link" href="#">
+                        <img src="img/terms-of-use.svg" alt="">
+                        Terms of use    
+                    </a>
+                    <div class="socialm-icons d-flex">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <title id="a4csmpur5bau3h8pgr0i56lh1mo9uiub">Twitter</title>
+                                <path d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z"></path>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <title>Facebook</title>
+                                <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ai6lld7kjm6poyq60j95yecmly52o9ed" class="crayons-icon">
+                                <title id="ai6lld7kjm6poyq60j95yecmly52o9ed">Github</title>
+                                <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"></path>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <title id="a9mxmwigmxprdyj9potffal635l5wjv">Instagram</title>
+                                <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"></path>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <title>Twitch</title>
+                                <path d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                  </nav>
+                  <nav class="nav nav-tags flex-column">
+                    <div class="tags-head d-flex align-items-center">
+                        <h6>My Tags</h6>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+                                <path d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="tags overflow-auto">
+                        <a class="nav-link" href="#">
+                            #javascript
+                        </a>
+                        <a class="nav-link" href="#">
+                            #newdev
+                        </a>
+                        <a class="nav-link" href="#">
+                            #begginers
+                        </a>
+                        <a class="nav-link" href="#">
+                            #html 
+                        </a>
+                        <a class="nav-link" href="#">
+                            #css
+                        </a>
+                        <a class="nav-link" href="#">
+                            #react
+                        </a>
+                        <a class="nav-link" href="#">
+                            #bootstrap
+                        </a>
+                        <a class="nav-link" href="#">
+                            #aws
+                        </a>
+                        <a class="nav-link" href="#">
+                            #nodejs
+                        </a>
+                        <a class="nav-link" href="#">
+                            #git
+                        </a>
+                    </div>
+                  </nav>
+                  <div class="card" >
+                    <img src="img/devto-img-card1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Calling all early-career developers & coding mentors!</h6>
+                      <p class="card-text">Join CodeNewbie Community: a supportive space for coding newbies to connect & express themselves.</p>
+                      <a href="#" class="">->Get in on the fun!</a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="img/devto-img-card2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title shop">The Forem Shop is Here!</h4>
+                      <a href="#" class="">>> Shop Forem, DEV, and CodeNewbie merch</a>
+                    </div>
+                  </div>
+            </aside>
+            <!--Main-cards-secction-->
+            <section class="col-12 col-md-9 col-lg-6 main-cards-section">
+                <ul class="nav nav-pills mt-3 mb-2" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-home-tab" data-toggle="pill" data-target="#pills-relevant" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Relevant</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-latest" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Latest</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-top" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Top</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!--Relevant-->
+                    <div class="tab-pane fade show active" id="pills-relevant" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="card mb-2 principal-card">
+                            <a href="./post-view/index.html">
+                                <img src="img/card-section-img1.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar1.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">crater90</p>
+                                        <p class="date m-0">Dec 4 '21</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="./post-view/index.html">5 GitHub Repositories for learning developers...</a> </h4>
+                                <div class="hastags">
+                                    <a href="">#webdev</a>
+                                    <a href="">#javascript</a>
+                                    <a href="">#html</a>
+                                    <a href="">#beginners</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">1307 <span class="reactions d-none d-md-inline">Reactions</span></span> 
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">22 <span class="comments d-none d-md-inline">Comments</span></span> 
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar8.png" alt="" class="mr-2">
+                                </a>                           
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Emma Bostian</p>
+                                        <p class="date m-0">Sep 29 '20</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">5 Things You Need To Become A Senior Developer</a> </h4>
+                                <div class="hastags">                                 
+                                    <a href="">#carrer</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">673 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">24 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">6 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar4.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Mustapha Aouas</p>
+                                        <p class="date m-0">Sep 26</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">5 webdev tips you may want to know #2</a> </h4>
+                                <div class="hastags">
+                                    <a href="">#javascript</a>
+                                    <a href="">#css</a>
+                                    <a href="">#html</a>
+                                    <a href="">#webdev</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">20<span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments d-none d-md-inline">Add Comment</span>
+                                            <span class="num-comments d-md-none">0 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar5.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Valeria</p>
+                                        <p class="date m-0">Sep 8</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Me & React: 5 years in 15 minutes</a> </h4>
+                                <div class="hastags">                                 
+                                    <a href="">#react</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#javascript</a>
+                                    <a href="">#webdev</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">779 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">42 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">7 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar7.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Sarath P M</p>
+                                        <p class="date m-0">Sep 3</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Git Cheatsheet</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#git</a>
+                                    <a href="">#programming</a>
+                                    <a href="">#github</a>
+                                    <a href="">#codenewbie</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">470 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">16 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">6 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar6.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href=""> 
+                                        <p class="name m-0">The Coding Mermaid</p>
+                                        <p class="date m-0">Jul 5</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">12 APIs that you as a developer will love it</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#javascript</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#api</a>
+                                    <a href="">#webdev</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">1887 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">60 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">4 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar9.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Fredy Sandoval</p>
+                                        <p class="date m-0">Sep 20</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">I'll teach you 7 Array methods. (with animations!)</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#javascript</a>
+                                    <a href="">#array</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#programming</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">164 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">8 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar10.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Suprabha</p>
+                                        <p class="date m-0">Jun 19</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Cheatsheet for Web Developers</a></h4>
+                                <div class="hastags">
+                                    <a href="">#javascript</a>
+                                    <a href="">#webdev</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#programming</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">1039 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">29 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 principal-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar2.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Novu</p>
+                                        <p class="date m-0">Sep 2</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">GitHub is removing the Trending tab</a></h4>
+                                <div class="hastags">
+                                    <a href="">#discuss</a>
+                                    <a href="">#opensourse</a>
+                                    <a href="">#github</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">21 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">11 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">1 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 principal-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar3.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Akram A. Abdelbasir</p>
+                                        <p class="date m-0">Sep 14</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">How to add SASS to your project?</a></h4>
+                                <div class="hastags">
+                                    <a href="">#css</a>
+                                    <a href="">#sass</a>
+                                    <a href="">#css</a>
+                                    <a href="">#tutorial</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">660 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments ">10 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 mins read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Latest-->
+                    <div class="tab-pane fade" id="pills-latest" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="card mb-2 principal-card">
+                            <a href="">
+                                <img src="img/card-section-img2.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar2.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Novu</p>
+                                        <p class="date m-0">Aug 15</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Building a chat app with Socket.io and React</a></h4>
+                                <div class="hastags">
+                                    <a href="">#react</a>
+                                    <a href="">#node</a>
+                                    <a href="">#javascript</a>
+                                    <a href="">#programming</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">488 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">60 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">16 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar5.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Valeria</p>
+                                        <p class="date m-0">Sep 24</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">ES Modules & Import Maps: Back to the Future</a></h4>
+                                <div class="hastags">                                                                                    
+                                    <a href="">#javascript</a>
+                                    <a href="">#webdev</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#esm</a> 
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">7 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments d-none d-md-inline">Add Comment</span>
+                                            <span class="num-comments d-md-none">0 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-2">
+                                        <p class="card-text m-0"><small class="text-muted">3 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar9.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Fredy Sandoval</p>
+                                        <p class="date m-0">Jul 12</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">The Google Drive API for the very, very beginner.</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#googlecloud</a>
+                                    <a href="">#api</a>
+                                    <a href="">#tutorial</a>
+                                    <a href="">#beginners</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">5 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments d-none d-md-inline">Add Comment</span>
+                                            <span class="num-comments d-md-none">0 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar6.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">The Coding Mermaid</p>
+                                        <p class="date m-0">Sep 5</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Inspire me Monday - From Pathologic Anatomy to QA Lead</a></h4>
+                                <div class="hastags">                                                                   
+                                    <a href="">#beginners</a>                             
+                                    <a href="">#webdev</a>
+                                    <a href="">#carrer</a>
+                                    <a href="">#qa</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">14 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">2 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">5 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar4.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Mustapha Aouas</p>
+                                        <p class="date m-0">Sep 16</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">5 webdev tips you may want to know</a></h4>
+                                <div class="hastags">
+                                    <a href="">#webdev</a>
+                                    <a href="">#javascript</a>
+                                    <a href="">#html</a>
+                                    <a href="">#css</a>               
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">56 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">2 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar8.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Emma Bostian</p>
+                                        <p class="date m-0">Sep 29 '20</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">5 Tips On Landing Your First Developer Job</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#carrer</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">306 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">12 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">6 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Top-->
+                    <div class="tab-pane fade" id="pills-top" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="card mb-2 principal-card">
+                            <a href="">
+                                <img src="img/card-section-img3.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar3.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Akram A. Abdelbasir</p>
+                                        <p class="date m-0">Sep 24</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Sass: Interpolation & Nesting</a></h4>
+                                <div class="hastags">
+                                    <a href="">#css</a>
+                                    <a href="">#sass</a>
+                                    <a href="">#scss</a>
+                                    <a href="">#design</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">61 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">1 <span class="comments d-none d-md-inline">Comment</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 mins read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar8.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Emma Bostian</p>
+                                        <p class="date m-0">Aug 27 '20</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Creating A Custom Scroll Bar In 24 Lines of CSS</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#css</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">609 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">14 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">6 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 principal-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar2.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Novu</p>
+                                        <p class="date m-0">Jul 11</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">How to send an SMS using Twilio</a></h4>
+                                <div class="hastags">
+                                    <a href="">#javascript</a>
+                                    <a href="">#webdev</a>
+                                    <a href="">#programming</a>
+                                    <a href="">#twilio</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">36 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">3 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">7 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar10.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Suprabha</p>
+                                        <p class="date m-0">May 8</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">7 Productive website for web developers</a></h4>
+                                <div class="hastags">
+                                    <a href="">#javascript</a>
+                                    <a href="">#webdev</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#productivity</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">25 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments d-none d-md-inline">Add Comment</span>
+                                            <span class="num-comments d-md-none">0 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar4.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Mustapha Aouas</p>
+                                        <p class="date m-0">Sep 12 '19</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">CSS Grid: illustrated introduction</a></h4>
+                                <div class="hastags">
+                                    <a href="">#css</a>
+                                    <a href="">#webdev</a>
+                                    <a href="">#tutorial</a>
+                                    <a href="">#beginners</a>        
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">1573 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">18 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">2 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar5.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Valeria</p>
+                                        <p class="date m-0">Jan 6</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Introduction to HTTP & REST API</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#webdev</a>
+                                    <a href="">#beginners</a>
+                                    <a href="">#go</a>
+                                    <a href="">#tutorial</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">20 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments d-none d-md-inline">Add Comment</span>
+                                            <span class="num-comments d-md-none">0 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">12 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar9.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">Fredy Sandoval</p>
+                                        <p class="date m-0">Jul 9</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Which Programming language is faster at reading?</a></h4>
+                                <div class="hastags">                                 
+                                    <a href="">#go</a>
+                                    <a href="">#javascript</a>
+                                    <a href="">#rust</a>
+                                    <a href="">#python</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">17 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">14 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">4 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 secondary-card">
+                            <div class="user d-flex align-items-center mt-3 ml-3">
+                                <a href="">
+                                    <img src="img/avatar6.png" alt="" class="mr-2">
+                                </a>
+                                <div class="user-data">
+                                    <a href="">
+                                        <p class="name m-0">The Coding Mermaid</p>
+                                        <p class="date m-0">Sep 5</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title"> <a href="">Learn JavaScript while playing games</a></h4>
+                                <div class="hastags">                                                                   
+                                    <a href="">#javascript</a>                             
+                                    <a href="">#beginners</a>
+                                    <a href="">#gamedev</a>
+                                    <a href="">#programming</a>
+                                </div>
+                                <div class="interactions d-flex align-items-center justify-content-between">
+                                    <div class="reactions-comments d-flex ml-md-4">
+                                        <a href="" class="mr-md-2">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <span class="num-reactions">299 <span class="reactions d-none d-md-inline">Reactions</span></span>
+                                        </a>
+                                        <a href="" class="">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <span class="num-coments">7 <span class="comments d-none d-md-inline">Comments</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="save d-flex align-items-center mr-md-2">
+                                        <p class="card-text m-0"><small class="text-muted">3 min read</small></p>
+                                        <a href="" class="ml-3">
+                                            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="" d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <!--Aside-right-->
+            <aside class="col-lg-3 aside-right d-none d-lg-inline">
+                <div class="list-group mt-3">
+                    <div class="head-listings d-flex justify-content-between align-items-center">
+                        <h6 class="mb-0 ml-3">Listings</h6>
+                        <a href="" class="mr-3">
+                            <small class="">See all</small>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>&#x1F4E8; This Week In React: newsletter for professionals</span>
+                      <small class="text-muted">collabs</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>CloudTempo - CMD+K for AWS Console</span>
+                        <small class="text-muted">products</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Announcing the Budibase Hakathon - Over $5K in prizes &#x1F389;</span>
+                        <small class="text-muted">cevents</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>[Oct 26th] &#x1F383; Getting Started With Svelte (Stop Using React!) Workshop &#x1F383;</span>
+                        <small class="text-muted">events</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>A documentation platform built for devs
+                            &#x1F30A;
+                        </span>
+                        <small class="text-muted">products</small>
+                    </a>
+                    <div class="footer-listing d-flex align-items-center">
+                        <a href="#" class="list-group-item list-group-item-action text-center" aria-current="true">
+                            <span class="final-link">Create a Listing</span> 
+                        </a>
+                    </div>
+                  </div>
+                  <!--Second-list-->
+                  <div class="list-group mt-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#help</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>How can I use the Notion API to automate Notion? API</span>
+                      <small class="badge">New</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Suggest me : College/University management system</span>
+                        <small class="badge">New</small>
+                    </a>
+                  </div>
+                  <!--Third-list-->
+                  <div class="list-group mt-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#discuss</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>Meme Monday &#x1F6A8;</span>
+                      <small class="text-muted">34 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Reasons NOT to...</span>
+                        <small class="text-muted">3 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>GitHub verdinho: Ter ou não ter?</span>
+                        <small class="text-muted">5 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Can A Tech Meetup Have Code Smell?</span>
+                        <small class="badge">New</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>How do you focus??</span>
+                        <small class="text-muted">5 comments</small>
+                    </a>
+                  </div>
+                  <!--Fourth list-->
+                  <div class="list-group mt-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#explainlikeimfive</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>Explain Open Source like I'm five</span>
+                      <small class="text-muted">22 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Explain JSX like I'm five</span>
+                        <small class="text-muted">23 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Unicorn on Dev &#x1F984&#x1F984;</span>
+                        <small class="text-muted">4 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Is MVC pattern used only on monolithic web applications?</span>
+                        <small class="text-muted">3 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Explain Blockchain like I am Five</span>
+                        <small class="text-muted">32 comments</small>
+                    </a>
+                  </div>
+                  <div class="list-group mt-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#challenge</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>Hackathon: Build a space-themed application (and win a MacBook)</span>
+                      <small class="badge">New</small>
+                    </a>
+                  </div>
+                  <div class="list-group mt-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#meta</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>Our Dear Unicorn Friend is Going on Vacation</span>
+                      <small class="text-muted">39 comments</small>
+                    </a>
+                  </div>
+                  <!--Fifth-section-->
+                  <div class="list-group mt-3 mb-lg-3">
+                    <div class="head-listings d-flex align-items-center">
+                        <a href="" class="hash-head mr-3">
+                            <h6 class="mb-0 ml-3">#discuss</h6>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                      <span>Meme Monday &#x1F6A8;</span>
+                      <small class="text-muted">34 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Can A Tech Meetup Have Code Smell?</span>
+                        <small class="badge">New</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>How do you create your headers??</span>
+                        <small class="text-muted">6 comments</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Hackathon: Build a space-themed application (and win a MacBook)</span>
+                        <small class="badge">New</small>
+                    </a>
+                    <a href="#" class="nav-listing list-group-item list-group-item-action d-flex flex-column" aria-current="true">
+                        <span>Data privacy - Why you should be your own data protection authority</span>
+                        <small class="badge">New</small>
+                    </a>
+                  </div>
+            </aside>
+        </div>
+    </main>
     <!--Footer-->
-    
+    <footer class="container-fluid text-center p-3 p-md-5">
+        <div class="footer-content">
+            <p class="mb-2"><a href="">DEV Community &#x1F469&#x200D&#x1F4BB;&#x1F468&#x200D&#x1F4BB;</a> - A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+            <p class="mb-0">Built on <a href="">Forem</a> - the <a href="">open source</a> software that powers <a href="">DEV</a> and other inclusive communities.</p>
+            <p>Made with love and <a href="">Forem</a> DEV Community &#x1F469&#x200D&#x1F4BB;&#x1F468&#x200D&#x1F4BB; &#169;  2016 - 2022.</p>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="an4iswyzh131vyf4f8nfan9dht6zki31" class="crayons-icon crayons-icon--default c-link__icon"><title id="an4iswyzh131vyf4f8nfan9dht6zki31">Forem logo</title>
+                    <g clip-path="url(#clip0)" fill="#1AB3A6">
+                        <path d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <path fill="#fff" d="M0 0h24v24H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
