@@ -997,6 +997,12 @@ footer {
     position: sticky;
     top: 2rem;
   }
+  main .aside-right-post .container-aside-right .card-header {
+    background-color: black;
+    height: 2rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .footer-post {
