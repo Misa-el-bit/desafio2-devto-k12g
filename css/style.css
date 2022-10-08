@@ -277,7 +277,11 @@ main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card
   margin: 0;
   font-size: 1.25rem;
 }
-main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title:hover {
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title a, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title a {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+}
+main .main-cards-section .tab-content .tab-pane .principal-card .card-body .card-title a:hover, main .main-cards-section .tab-content .tab-pane .secondary-card .card-body .card-title a:hover {
   color: rgb(59, 73, 223);
   cursor: pointer;
 }

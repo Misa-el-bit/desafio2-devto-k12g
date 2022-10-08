@@ -306,9 +306,13 @@ main{
                         .card-title{
                             margin: 0;
                             font-size: 1.25rem;
-                            &:hover{
-                                color: $blue-text;
-                                cursor: pointer;
+                            a{
+                                color: $text-color;
+                                text-decoration: none;
+                                &:hover{
+                                    color: $blue-text;
+                                    cursor: pointer;
+                                }
                             }
                         }
                         .hastags{
