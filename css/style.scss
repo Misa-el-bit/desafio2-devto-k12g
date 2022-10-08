@@ -433,6 +433,414 @@ footer{
     font-size: .875rem;
     color: $text-color;
 }
+// aside-left post-view
+main{
+    .aside-left-post{
+       .icons-post{
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        justify-content: space-evenly;
+        background-color: $navbar;
+        box-shadow: 0 -1px 5px rgb(0 0 0 / 20%);
+        .heart{
+            a{
+                svg{
+                    &:hover{
+                        background-color:rgba(245, 57, 0, 0.10);
+                        border-radius: 100%;
+                        path{
+                            fill:#F53900
+                        }
+                    }
+                }
+            }
+        }
+        .comment{
+            a{
+                svg{
+                    &:hover{
+                        background-color:rgba(247, 223, 30, 0.10);
+                        border-radius: 100%;
+                        path{
+                            fill:#f7df1e
+                        }
+                    }
+                }
+            }
+        }
+        .save{
+            a{
+                svg{
+                    &:hover{
+                        background-color:rgba(79,70,229,0.1);
+                        border-radius: 100%;
+                        path{
+                            fill:rgb(79,70,229)
+                        }
+                    }
+                }
+            }
+        }
+        .dots{
+            a{
+                svg{
+                    fill: #717171;
+                    &:hover{
+                        background-color:rgba(0, 0, 0, 0.035);
+                        border-radius: 100%;
+                        path{
+                            fill:#090909
+                        }
+                    }
+                }
+            }
+        }
+        .count{
+            margin-left: .75rem;
+        }
+       }
+    }
+}
+//main-cards post-view
+main{
+    .main-cards-post{
+        padding: 0;
+        .card-post{
+            .user{
+                margin-left: 1rem;
+                margin-top: 1rem;
+                img{
+                    width: 2rem;
+                    border-radius: 100%;
+                }
+                .user-data{
+                    a{
+                        text-decoration: none;
+                    }
+                    .name{
+                        font-weight: 700;
+                        line-height: 12px;
+                        padding-top: .5rem;
+                        color: $text-color;
+                        &:hover{
+                            color: $blue-text;
+                        }
+                    }
+                    .date{
+                        font-size: .75rem;
+                    }
+                }
+            }
+            .card-body{
+                .hashtags-post{
+                    margin-left: 0.25rem;
+                    a{
+                        color: $text-color;
+                        opacity: .8;
+                        text-decoration: none;
+                        padding: .25rem;                        
+                    }
+                    .purple{
+                        span{
+                            color: #562765;
+                        }
+                        &:hover{
+                            background-color: rgba(86,39,101,0.10);
+                            border: 1px solid #562765;;
+                            border-radius: 5px;
+                        }
+                    }
+                    .yellow{
+                        span{
+                            color: #f7df1e;
+                        }
+                        &:hover{
+                            background-color: rgba(247, 223, 30, 0.10);
+                            border: 1px solid #f7df1e;
+                            border-radius: 5px;
+                        }
+                    }
+                    .red{
+                        span{
+                            color: #F53900;
+                        }
+                        &:hover{
+                            background-color: rgba(245, 57, 0, 0.10);
+                            border: 1px solid #F53900;
+                            border-radius: 5px;
+                        }
+                    }
+                    .green{
+                        span{
+                            color: #008335;
+                        }
+                        &:hover{
+                            background-color: rgba(0, 131, 53, 0.10);
+                            border: 1px solid #008335;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                .post-content{
+                    margin-top: 1rem;
+                    .title{
+                        font-size: 1.5rem;
+                        text-decoration: underline;
+                        margin-bottom: 1rem;
+                        a{
+                            color: $blue-text;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    .bonus{
+                        font-size: 1.25rem;
+                    }
+                }
+                .comments-post{
+                    margin-top: 1rem;
+                    border-top: 1px solid #efefef;
+                    .top-comments{
+                        h3{
+                            font-size: 1.25rem;
+                        }
+                        button{
+                            border: 2px solid #d6d6d7;
+                            width: 6.7rem;
+                            padding: 0.3rem;
+                            height: 2.3rem;
+                            &:hover{
+                                background-color: $main;
+                                border: 2px solid #a3a3a3;
+                                border-radius: 5px;
+                            }
+                        }   
+                    }
+                    .area-comment{
+                        margin-top: 1rem;
+                        img{
+                           width: 1.5rem;
+                           height: 1.5rem;
+                           border-radius: 100%; 
+                        }
+                        textarea{
+                            width: 100%;
+                            border-radius: 5px;
+                            border: 1px solid rgba(0,0,0,.125);
+                        }
+                        textarea::placeholder{
+                            padding-left: .5rem;
+                        }
+                    }
+                    .other-comments{
+                        img{
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            border-radius: 100%; 
+                        }
+                        .avatar-user{
+                            margin-top: .75rem;
+                            svg{
+                                margin-top: .25rem;
+                                path{
+                                    fill:#a3a3a3;
+                                }
+                            }
+                            &:hover{
+                                svg{
+                                    path{
+                                        fill:$svg;
+                                    }
+                                }
+                            }
+                        }
+                        .comment-content{
+                            border: 1px solid rgba(0,0,0,.125);
+                            border-radius: 5px;
+                            background-color: $navbar;
+                            width: 95%;
+                            .author{
+                                padding: .75rem .5rem;
+                                a{
+                                    color: $text-color;
+                                    text-decoration: none;
+                                    &:hover{
+                                        background-color: $main;
+                                        border-radius: 5px;
+                                    }
+                                }
+                                span{
+                                    margin: 0 .5rem;
+                                    padding-top: .10rem;
+                                }
+                                .time{
+                                    font-size: .875rem;
+                                    padding-top: .10rem;
+                                    &:hover{
+                                        color:#a3a3a3;
+                                        background-color: transparent;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            .commentary{
+                                margin: 0;
+                                padding: .5rem;
+                            }
+                        }
+                        
+                    }
+                    .reactions-post{
+                        margin: .5rem 0 1rem 2.5rem;
+                        a{
+                            color: $text-color;
+                            text-decoration: none;
+                            padding: .25rem .50rem;
+                            &:hover{
+                                background-color: $main;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                    .terms-of-use{
+                        a{
+                            text-decoration: none;
+                        }
+                        span{
+                            margin: 0 .5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .did{
+            padding: 1rem;
+            .you-know{
+                margin-bottom: 1.5rem;
+            }
+        }
+        .read-next{
+            padding: 1rem;
+            img{
+                width: 2.5rem;
+                border-radius: 100%;
+            }
+            .user{
+                .user-data-post{
+                    margin-top: 1rem;
+                    a{
+                        line-height: 22px;
+                        color: $text-color;
+                        text-decoration: none;
+                        &:hover{
+                            color: $blue-text;
+                        }
+                    }
+                    .name{
+                        font-size: 1.25rem;
+                    }
+                    .date{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}
+//aside-rigth post-view
+main{
+    .aside-right-post{
+        padding: 0;
+        
+            .card-header{
+                background-color: black;
+                height: 2rem;
+            }
+            .card-body{
+                padding: 1rem;   
+            }
+            .user-data-bio{
+                margin-top: -2.25rem;
+                a{
+                    text-decoration: none;
+                }
+                img{
+                    width: 3rem;
+                    border-radius: 100%;
+                    margin-right: .5rem;
+                }
+                span{
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: $text-color;
+                    &:hover{
+                        color: $blue-text;
+                    }
+                }
+            }
+            .follow{
+                width: 100%;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                background-color: $blue-text;
+                &:hover{
+                    background-color: rgb(47,58,178);
+                }
+            }
+            p{
+                margin: 0;
+            }
+            .title{
+                font-size: .75rem;
+                font-weight: 700;
+                color: rgb(82,82,82);
+            }
+            .value{
+                font-size: .875rem;
+                color: $text-color;
+            }
+            .more{
+                margin-top: 1rem;
+                border: 1px solid rgba(0,0,0,.125);
+                border-bottom: none;
+                height: 3rem;
+                background-color: $aside-right;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                .more-from{
+                    padding: .5rem;
+                    .hash-head{         
+                        color: $blue-text;
+                        text-decoration: none;
+                    }
+                }
+                .nav-listing{
+                    background-color: $aside-right;
+                    span{
+                        font-size: .875rem;
+                    }
+                    &:hover{
+                        background-color: $navbar;
+                        .more-from{
+                            color:$blue-text
+                        }
+                    }
+                } 
+            }
+           
+    }
+}
+//footer post 
+footer{
+    margin-top: 2rem;
+}
 //navbar-responsive
 @media only screen and (min-width:768px){
     .navbar{
@@ -598,7 +1006,7 @@ footer{
         }
     }
 }
-//main-cards-section responsivee
+//main-cards-section responsive
 @media only screen and (min-width:768px){
     main{
         .main-cards-section{
@@ -634,5 +1042,118 @@ footer{
 @media only screen and (min-width:768px){
     footer{
         height: 13rem;
+    }
+}
+//post-view-aside-left responsive
+@media only screen and (min-width:768px){
+    main{
+        .aside-left-post{
+            padding-left: 1.5rem;
+            padding-right: .5rem;
+            .icons-post{
+                position: sticky;
+                top: 8rem;
+                height: 18rem;
+                width: 2rem;
+                background-color: $main;
+                box-shadow: none;
+                .heart,.comment,.save{
+                    margin-bottom: 1rem;
+                    .count{
+                        margin: .5rem 0 0 0;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    main{
+        .aside-left-post{
+            padding: 3rem 1rem 0 5rem;
+            .icons{
+                top: 6rem;
+                .heart,.comment,.save{
+                    margin-bottom: 1rem;
+                    .count{
+                        margin-top: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//post-view-main-cards-post responsive
+@media only screen and (min-width:768px){ 
+    main{
+        .main-cards-post{
+            padding-left: 1rem;
+            max-width: 90%;
+            .card-post{
+                .user{
+                    margin: 2rem 0 0 2rem;
+                }
+                .card-body{
+                    padding: 2rem;
+                    .card-title{
+                        font-size:2.75rem;
+                        font-weight: 800;
+                    }
+                }
+            }
+            .dark-mode{
+                font-size: 1.5rem;
+            }  
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    main{
+        .main-cards-post{
+            max-width: 61%;
+            padding-left: 2rem;
+            margin-right: 1rem;  
+            .card-post{
+                .card-body{
+                    .card-title{
+                        font-size: 3.50rem;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+//aside-rigth-post responsive
+@media only screen and (min-width:768px){
+    main{
+        .aside-right-post{
+            margin-left: 5rem;
+            max-width: 88%;
+            height: 27rem;
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    main{
+        .aside-right-post{
+            margin: 0;
+            position: sticky;
+            height: auto;
+            .container-aside-right{
+                position: sticky;
+                top: 2rem;
+            }
+        }
+    } 
+}
+//footer-post responsive
+@media only screen and (min-width:768px){
+    .footer-post{
+        margin-top: 0;
     }
 }
