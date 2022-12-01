@@ -746,10 +746,6 @@ main .aside-right-post .more .nav-listing:hover .more-from {
   color: rgb(59, 73, 223);
 }
 
-footer {
-  margin-top: 2rem;
-}
-
 @media only screen and (min-width: 768px) {
   .navbar .form-control {
     width: 55%;
